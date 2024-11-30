@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Flight Booking</title>
+</head>
+<body>
+<h1 th:text="${message}">Flight Booking System</h1>
+<form action="/flights/search" method="get">
+    <label>From:</label>
+    <input type="text" name="departure">
+    <label>To:</label>
+    <input type="text" name="arrival">
+    <button type="submit">Search Flights</button>
+</form>
+</body>
+</html>
