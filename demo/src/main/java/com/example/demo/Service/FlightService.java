@@ -15,6 +15,7 @@ public class FlightService {
     public List<Flight> searchFlights(String departure, String arrival) {
         return flightRepository.findByDepartureLocationAndArrivalLocation(departure, arrival);
     }
-
-
 }
+
+
+

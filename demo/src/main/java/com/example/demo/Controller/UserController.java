@@ -29,4 +29,10 @@ public class UserController {
         }
         return "register";
     }
+    @PostMapping("/api/login")
+    public String login(@RequestBody User user) {
+        // System.out.println(user);
+
+        return userService.verify(user);
+    }
 }
